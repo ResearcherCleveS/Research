@@ -34,6 +34,9 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
+    
+    --grey: #808080;
+    --blue: #2B547E;
     --black: #000;
     --pink: #ff3258;
     --white: #f0e9f2;
@@ -70,7 +73,7 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--black-1);
+    color: var(--grey);
     line-height: var(--line-height-normal);
     background: var(--blue);
     overflow-x: hidden;
