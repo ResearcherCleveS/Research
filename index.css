@@ -63,7 +63,7 @@ html {
     scroll-behavior: smooth;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1600px) {
     html {
         font-size: 52%;
     }
