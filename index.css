@@ -34,16 +34,13 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --gold: #F1C400;
-    --grey: #808080;
-    --blue: #2B547E;
     --black: #000;
     --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
 
-    --container-max-width: 1600px;
+    --container-max-width: 1180px;
     --container-normal-width: 800px;
     --container-medium-width: 700px; 
     --container-small-width: 500px;
@@ -63,7 +60,7 @@ html {
     scroll-behavior: smooth;
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 1000px) {
     html {
         font-size: 52%;
     }
@@ -73,9 +70,9 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--grey);
+    color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--blue);
+    background: var(--black);
     overflow-x: hidden;
 }
 
@@ -84,25 +81,25 @@ body {
     margin: 0 auto;
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 1340px) {
     .row {
-        max-width: 1600px;
+        max-width: 1100px;
     }
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 1240px) {
     .row {
         padding: 0 var(--gutter-medium);
     }
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 600px) {
     .row {
         padding: 0 var(--gutter-normal);
     }
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 600px) {
     .row {
         padding: 0 var(--gutter-small);
     }
@@ -128,7 +125,7 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--grey);
+    color: var(--white);
 }
 
 .heading-primary {
@@ -137,7 +134,7 @@ h3 {
     font-weight: 400;
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 900px) {
     .heading-primary {
         font-size: 6.5rem;
     }
@@ -153,7 +150,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--gold);
+    background: var(--pink);
     margin: var(--gutter-small) 0;
 }
 
@@ -162,7 +159,7 @@ h3 {
     margin-bottom: var(--gutter-small);
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 500px) {
     .heading-primary {
         font-size: var(--font-size-large);
     }
@@ -180,7 +177,7 @@ p {
     margin: var(--gutter-small-1) 0;
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 900px) {
     p { 
         max-width: var(--container-small-width);
     }
@@ -191,7 +188,7 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--grey);
+    color: var(--white);
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
@@ -204,7 +201,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--gold);
+    outline: 2px solid var(--pink);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -213,7 +210,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--gold);
+    color: var(--pink);
 }
 
 .btn {
@@ -222,7 +219,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--gold);
+    border: 1px solid  var(--pink);
     font-weight: 400;
 }
 
@@ -237,7 +234,7 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--blue);
+    background: var(--white);
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -246,20 +243,20 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--gold);
+    background: var(--pink);
 }
 
-.btn--gold {
-    background: var(--gold);
+.btn--pink {
+    background: var(--pink);
     transition: all 0.2s;
 }
 
-.btn--gold::after {
+.btn--pink::after {
     display: none;
 }
 
-.btn--gold:hover,
-.btn--gold:focus {
+.btn--pink:hover,
+.btn--pink:focus {
     background: transparent;
 }
 
@@ -269,7 +266,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--gold);
+    border-bottom: 1px solid var(--pink);
 }
 
 .link__text::after {
@@ -279,7 +276,7 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--grey);
+    background: var(--white);
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -292,7 +289,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--gold);
+    background: var(--pink);
 }
 
 .link__text span {
@@ -311,7 +308,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--gold);
+    background-color: var(--pink);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -322,13 +319,13 @@ body:not(.user-is-tabbing) a:focus {
     height: 70%;
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 900px) {
     .back-to-top {
         right: 2rem;
     }
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 500px) {
     .back-to-top {
         right: 1rem;
     }
@@ -353,19 +350,19 @@ body:not(.user-is-tabbing) a:focus {
     margin-right: var(--gutter-medium);
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 500px) {
     .nav {
         justify-content: center;
     }
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 400px) {
     .nav__item:not(:last-child) {
         margin-right: var(--gutter-normal);
     }
 }
 
-@media(max-width: 1600px) {
+@media(max-width: 300px) {
     .nav {
         font-size: var(--font-size-small);
     }
@@ -388,18 +385,18 @@ body:not(.user-is-tabbing) a:focus {
     right: 100%;
     display: inline-block;
     height: 1rem;
-    background: var(--grey);
+    background: var(--white);
     transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
 .nav__link:hover {
-    color: var(--gold);
+    color: var(--pink);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--gold);
+    background: var(--pink);
 }
 
 /* --------------------------------------- */
