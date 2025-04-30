@@ -37,10 +37,10 @@
     --gold: #F3C400
     --grey: #676767
     --blue: #2B547E
-    --black: #000;
+/*     --black: #000;
     --pink: #ff3258;
     --white: #f0e9f2;
-    --white-1: #e5e5e6da;
+    --white-1: #e5e5e6da; */
 
 
     --container-max-width: 1180px;
@@ -128,7 +128,7 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--blue);
+    color: var(--grey);
 }
 
 .heading-primary {
