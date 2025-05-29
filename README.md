@@ -1,3 +1,3 @@
-# Wavelets and LSTM Closed Loop Forecasting
-$\textsf{Please read the Python Notebook pdf. Thank you.}$
-$\textsf{Wavelet & LSTM Closed Loop Forecasting.pdf}$
+# $\sf Wavelets and LSTM Closed Loop Forecasting$
+$\sf Please read the Python Notebook pdf. Thank you. $
+$\texttt{ Wavelet \& LSTM Closed Loop Forecasting.pdf }$
